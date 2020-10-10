@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NotificationReader</string>
+    <string name="service_name">notif_listener</string>
+</resources>
