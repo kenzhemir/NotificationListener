@@ -1,4 +1,4 @@
-package com.example.notificationreader
+package com.example.notificationreader.viewmodels
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

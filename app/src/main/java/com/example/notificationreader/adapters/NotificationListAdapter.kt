@@ -1,9 +1,10 @@
-package com.example.notificationreader
+package com.example.notificationreader.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.notificationreader.R
 import com.example.notificationreader.database.TransactionEntity
 
 class NotificationListAdapter :
@@ -38,7 +39,7 @@ class NotificationListAdapter :
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-        holder.textView.text = dataset[position].text
+        holder.textView.text = "${dataset[position].text} : ${dataset[position].is_saved}"
     }
 
     // Return the size of your dataset (invoked by the layout manager)

@@ -6,5 +6,6 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "transactions")
 class TransactionEntity(
     @PrimaryKey(autoGenerate = true) var id: Long,
-    var text: String
+    var text: String? = null,
+    var is_saved: Boolean = false
 )
