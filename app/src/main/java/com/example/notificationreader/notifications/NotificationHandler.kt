@@ -14,7 +14,7 @@ class NotificationHandler(var ctx: Context, private val onDbSave: () -> Unit) {
             .getStringSet(
                 "notification_text_regexes", setOf(
                     """(?<amount>\d*.?\d*) EUR покупка (?<payee>.*)""",
-                    """Совершён платеж на (?<amount>\d*.?\d*) EUR на имя (?<payee>.*)""",
+                    """(?<amount>\d*.?\d*) EUR на имя (?<payee>.*)""",
                     """Получателю (?<payee>.*) было отправлено (?<amount>\d*.?\d*) EUR"""
                 )
             )?.map { Regex(it) } ?: listOf()
