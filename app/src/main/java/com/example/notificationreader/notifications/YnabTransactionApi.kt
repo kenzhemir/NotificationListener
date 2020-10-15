@@ -39,7 +39,7 @@ class YnabTransactionApi(
 
     private fun customizeValue(key: String, value: String): String {
         return when (key) {
-            "amount" -> (value.toFloat() * 1000).toInt().toString()
+            "amount" -> (value.toFloat() * -1000).toInt().toString()
             else -> value
         }
     }
