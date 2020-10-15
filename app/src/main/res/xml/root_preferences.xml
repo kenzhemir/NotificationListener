@@ -1,5 +1,4 @@
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory app:title="@string/messages_header">
 
@@ -20,14 +19,16 @@
             app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
-            android:title="YNAB budget id"
             app:defaultValue=""
-            app:key="ynab_budget_id" />
+            app:key="ynab_budget_id"
+            app:title="YNAB budget id"
+            app:useSimpleSummaryProvider="true" />
 
         <EditTextPreference
-            android:title="YNAB access token"
             app:defaultValue=""
-            app:key="ynab_access_token" />
+            app:key="ynab_access_token"
+            app:title="YNAB access token"
+            app:useSimpleSummaryProvider="true" />
 
     </PreferenceCategory>
 
