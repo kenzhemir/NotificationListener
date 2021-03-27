@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="AlwaysShowAction">
     <item
-        android:id="@+id/your_item_id"
-        android:icon="@mipmap/ic_launcher_round"
+        android:id="@+id/settings_button"
+        android:icon="@drawable/ic_baseline_settings_24"
         android:title="@string/title_activity_settings"
         app:showAsAction="always" />
 </menu>

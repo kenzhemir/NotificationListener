@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.your_item_id -> {
+            R.id.settings_button -> {
                 startActivity(Intent(this, SettingsActivity::class.java))
                 true
             }
